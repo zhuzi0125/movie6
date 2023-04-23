@@ -52,7 +52,7 @@ def create_modnet():
                 ], type='index', value='Start')
                 ctrls += (mode, guidance)
 
-            movie_frames = gr.Slider(minimum=10,
+            movie_frames = gr.Slider(minimum=5,
                                      maximum=60,
                                      step=1,
                                      label='Movie Frames',

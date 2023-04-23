@@ -188,7 +188,7 @@ def create_modnet(id_part):
                                              _js='switchModnetMode')
 
             with gr.Row():
-                movie_frames = gr.Slider(minimum=10,
+                movie_frames = gr.Slider(minimum=5,
                                          maximum=60,
                                          step=1,
                                          label='Movie Frames',
@@ -260,7 +260,7 @@ def on_ui_tabs():
                             denoising_strength = gr.Slider(minimum=0.0, maximum=1.0, step=0.01,
                                                            label='Denoising strength', value=0.75,
                                                            elem_id=f"{id_part}_denoising_strength")
-                            movie_frames = gr.Slider(minimum=10,
+                            movie_frames = gr.Slider(minimum=5,
                                                      maximum=60,
                                                      step=1,
                                                      label='Movie Frames',
